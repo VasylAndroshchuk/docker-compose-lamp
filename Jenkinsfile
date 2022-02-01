@@ -8,7 +8,7 @@ node {
 
     stage('Build image') {
 
-        app = docker.build("vladsanyuk/ssdevopscc")
+        app = docker.build("androshchuk//ssdevopscc")
     }
 
     stage('Push image') {
