@@ -13,7 +13,7 @@ node {
 
     stage('Push image') {
 
-        docker.withRegistry('https://registry.hub.docker.com', 'docker-hub') {
+        docker.withRegistry('https:/registry.hub.docker.com', 'docker-hub') {
             app.push("redis31122021")
             } 
                 echo "Trying to Push Docker Build to DockerHub"
